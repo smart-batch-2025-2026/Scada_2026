@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\college file\\smart_batch\\scada\\SCADA_2026\\Sharp7Test\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B275323B-8459-4605-8220-CB2074CD30D9}|Sharp7Test\\Scada_App.csproj|f:\\college file\\smart_batch\\scada\\scada_2026\\sharp7test\\sharp7test\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B275323B-8459-4605-8220-CB2074CD30D9}|Sharp7Test\\Scada_App.csproj|solutionrelative:sharp7test\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\college file\\smart_batch\\scada\\SCADA_2026\\Sharp7Test\\Sharp7Test\\Program.cs",
+              "RelativeDocumentMoniker": "Sharp7Test\\Program.cs",
+              "ToolTip": "F:\\college file\\smart_batch\\scada\\SCADA_2026\\Sharp7Test\\Sharp7Test\\Program.cs",
+              "RelativeToolTip": "Sharp7Test\\Program.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAgwBcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T22:57:55.235Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
