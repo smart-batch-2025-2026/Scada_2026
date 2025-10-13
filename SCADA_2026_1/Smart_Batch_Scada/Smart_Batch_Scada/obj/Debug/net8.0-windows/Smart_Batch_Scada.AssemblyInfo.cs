@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Smart_Batch_Scada")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a882c173286893ee0abd324da65793c8a679d1c5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3ebed47bb214963e1bd6bf8f89989b747b8f283a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Smart_Batch_Scada")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Smart_Batch_Scada")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

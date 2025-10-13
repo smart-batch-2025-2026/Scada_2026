@@ -1959,11 +1959,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GP\\repo_scada_github\\SCADA_2026\\Smart_Batch_Scada\\Smart_Batch_Scada\\Smart_Batch_Scada.csproj",
+      "projectUniqueName": "D:\\GP\\repo_scada_github\\SCADA_2026_1\\Smart_Batch_Scada\\Smart_Batch_Scada\\Smart_Batch_Scada.csproj",
       "projectName": "Smart_Batch_Scada",
-      "projectPath": "D:\\GP\\repo_scada_github\\SCADA_2026\\Smart_Batch_Scada\\Smart_Batch_Scada\\Smart_Batch_Scada.csproj",
+      "projectPath": "D:\\GP\\repo_scada_github\\SCADA_2026_1\\Smart_Batch_Scada\\Smart_Batch_Scada\\Smart_Batch_Scada.csproj",
       "packagesPath": "C:\\Users\\zatkf\\.nuget\\packages\\",
-      "outputPath": "D:\\GP\\repo_scada_github\\SCADA_2026\\Smart_Batch_Scada\\Smart_Batch_Scada\\obj\\",
+      "outputPath": "D:\\GP\\repo_scada_github\\SCADA_2026_1\\Smart_Batch_Scada\\Smart_Batch_Scada\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

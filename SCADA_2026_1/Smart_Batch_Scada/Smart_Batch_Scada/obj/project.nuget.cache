@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2kt9iAeZ98s=",
+  "dgSpecHash": "fiiArkJlv/g=",
   "success": true,
-  "projectFilePath": "D:\\GP\\repo_scada_github\\SCADA_2026\\Smart_Batch_Scada\\Smart_Batch_Scada\\Smart_Batch_Scada.csproj",
+  "projectFilePath": "D:\\GP\\repo_scada_github\\SCADA_2026_1\\Smart_Batch_Scada\\Smart_Batch_Scada\\Smart_Batch_Scada.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zatkf\\.nuget\\packages\\bouncycastle.cryptography\\2.5.1\\bouncycastle.cryptography.2.5.1.nupkg.sha512",
     "C:\\Users\\zatkf\\.nuget\\packages\\closedxml\\0.105.0\\closedxml.0.105.0.nupkg.sha512",
@@ -49,9 +49,9 @@
       "code": "NU1701",
       "level": "Warning",
       "message": "Package 'iTextSharp 5.5.13.4' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
-      "projectPath": "D:\\GP\\repo_scada_github\\SCADA_2026\\Smart_Batch_Scada\\Smart_Batch_Scada\\Smart_Batch_Scada.csproj",
+      "projectPath": "D:\\GP\\repo_scada_github\\SCADA_2026_1\\Smart_Batch_Scada\\Smart_Batch_Scada\\Smart_Batch_Scada.csproj",
       "warningLevel": 1,
-      "filePath": "D:\\GP\\repo_scada_github\\SCADA_2026\\Smart_Batch_Scada\\Smart_Batch_Scada\\Smart_Batch_Scada.csproj",
+      "filePath": "D:\\GP\\repo_scada_github\\SCADA_2026_1\\Smart_Batch_Scada\\Smart_Batch_Scada\\Smart_Batch_Scada.csproj",
       "libraryId": "iTextSharp",
       "targetGraphs": [
         "net8.0-windows7.0"
