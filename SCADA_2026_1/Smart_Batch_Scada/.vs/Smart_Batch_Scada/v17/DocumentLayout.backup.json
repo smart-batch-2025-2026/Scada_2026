@@ -1,18 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\GP\\repo_scada_github\\SCADA_2026_1\\Smart_Batch_Scada\\",
+  "WorkspaceRootPath": "C:\\Users\\Mohammed_AlJamal\\OneDrive\\Desktop\\Scada1\\Scada_2026\\SCADA_2026_1\\Smart_Batch_Scada\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{993F7721-77CE-45FE-9BC2-67E813065BF3}|Smart_Batch_Scada\\Smart_Batch_Scada.csproj|d:\\gp\\repo_scada_github\\scada_2026_1\\smart_batch_scada\\smart_batch_scada\\formulaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{993F7721-77CE-45FE-9BC2-67E813065BF3}|Smart_Batch_Scada\\Smart_Batch_Scada.csproj|solutionrelative:smart_batch_scada\\formulaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{993F7721-77CE-45FE-9BC2-67E813065BF3}|Smart_Batch_Scada\\Smart_Batch_Scada.csproj|c:\\users\\mohammed_aljamal\\onedrive\\desktop\\scada1\\scada_2026\\scada_2026_1\\smart_batch_scada\\smart_batch_scada\\componentdetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{993F7721-77CE-45FE-9BC2-67E813065BF3}|Smart_Batch_Scada\\Smart_Batch_Scada.csproj|solutionrelative:smart_batch_scada\\componentdetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{993F7721-77CE-45FE-9BC2-67E813065BF3}|Smart_Batch_Scada\\Smart_Batch_Scada.csproj|d:\\gp\\repo_scada_github\\scada_2026_1\\smart_batch_scada\\smart_batch_scada\\productsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{993F7721-77CE-45FE-9BC2-67E813065BF3}|Smart_Batch_Scada\\Smart_Batch_Scada.csproj|solutionrelative:smart_batch_scada\\productsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{993F7721-77CE-45FE-9BC2-67E813065BF3}|Smart_Batch_Scada\\Smart_Batch_Scada.csproj|c:\\users\\mohammed_aljamal\\onedrive\\desktop\\scada1\\scada_2026\\scada_2026_1\\smart_batch_scada\\smart_batch_scada\\formuladetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{993F7721-77CE-45FE-9BC2-67E813065BF3}|Smart_Batch_Scada\\Smart_Batch_Scada.csproj|solutionrelative:smart_batch_scada\\formuladetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{993F7721-77CE-45FE-9BC2-67E813065BF3}|Smart_Batch_Scada\\Smart_Batch_Scada.csproj|d:\\gp\\repo_scada_github\\scada_2026_1\\smart_batch_scada\\smart_batch_scada\\productsform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{993F7721-77CE-45FE-9BC2-67E813065BF3}|Smart_Batch_Scada\\Smart_Batch_Scada.csproj|solutionrelative:smart_batch_scada\\productsform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{993F7721-77CE-45FE-9BC2-67E813065BF3}|Smart_Batch_Scada\\Smart_Batch_Scada.csproj|c:\\users\\mohammed_aljamal\\onedrive\\desktop\\scada1\\scada_2026\\scada_2026_1\\smart_batch_scada\\smart_batch_scada\\componentselectorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{993F7721-77CE-45FE-9BC2-67E813065BF3}|Smart_Batch_Scada\\Smart_Batch_Scada.csproj|solutionrelative:smart_batch_scada\\componentselectorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{993F7721-77CE-45FE-9BC2-67E813065BF3}|Smart_Batch_Scada\\Smart_Batch_Scada.csproj|C:\\Users\\Mohammed_AlJamal\\OneDrive\\Desktop\\Scada1\\Scada_2026\\SCADA_2026_1\\Smart_Batch_Scada\\smart_batch_scada\\formuladetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{993F7721-77CE-45FE-9BC2-67E813065BF3}|Smart_Batch_Scada\\Smart_Batch_Scada.csproj|solutionrelative:smart_batch_scada\\formuladetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{993F7721-77CE-45FE-9BC2-67E813065BF3}|Smart_Batch_Scada\\Smart_Batch_Scada.csproj|C:\\Users\\Mohammed_AlJamal\\OneDrive\\Desktop\\Scada1\\Scada_2026\\SCADA_2026_1\\Smart_Batch_Scada\\smart_batch_scada\\plant_mimic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{993F7721-77CE-45FE-9BC2-67E813065BF3}|Smart_Batch_Scada\\Smart_Batch_Scada.csproj|solutionrelative:smart_batch_scada\\plant_mimic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{993F7721-77CE-45FE-9BC2-67E813065BF3}|Smart_Batch_Scada\\Smart_Batch_Scada.csproj|C:\\Users\\Mohammed_AlJamal\\OneDrive\\Desktop\\Scada1\\Scada_2026\\SCADA_2026_1\\Smart_Batch_Scada\\smart_batch_scada\\formulaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{993F7721-77CE-45FE-9BC2-67E813065BF3}|Smart_Batch_Scada\\Smart_Batch_Scada.csproj|solutionrelative:smart_batch_scada\\formulaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,44 +34,86 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "FormulaForm.cs",
-              "DocumentMoniker": "D:\\GP\\repo_scada_github\\SCADA_2026_1\\Smart_Batch_Scada\\Smart_Batch_Scada\\FormulaForm.cs",
-              "RelativeDocumentMoniker": "Smart_Batch_Scada\\FormulaForm.cs",
-              "ToolTip": "D:\\GP\\repo_scada_github\\SCADA_2026_1\\Smart_Batch_Scada\\Smart_Batch_Scada\\FormulaForm.cs",
-              "RelativeToolTip": "Smart_Batch_Scada\\FormulaForm.cs",
-              "ViewState": "AgIAALIAAAAAAAAAAAAswNsAAAAsAAAAAAAAAA==",
+              "Title": "ComponentDetailsForm.cs",
+              "DocumentMoniker": "C:\\Users\\Mohammed_AlJamal\\OneDrive\\Desktop\\Scada1\\Scada_2026\\SCADA_2026_1\\Smart_Batch_Scada\\Smart_Batch_Scada\\ComponentDetailsForm.cs",
+              "RelativeDocumentMoniker": "Smart_Batch_Scada\\ComponentDetailsForm.cs",
+              "ToolTip": "C:\\Users\\Mohammed_AlJamal\\OneDrive\\Desktop\\Scada1\\Scada_2026\\SCADA_2026_1\\Smart_Batch_Scada\\Smart_Batch_Scada\\ComponentDetailsForm.cs",
+              "RelativeToolTip": "Smart_Batch_Scada\\ComponentDetailsForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-12T10:32:38.408Z",
+              "WhenOpened": "2025-10-21T23:05:52.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormulaDetailsForm.cs",
+              "DocumentMoniker": "C:\\Users\\Mohammed_AlJamal\\OneDrive\\Desktop\\Scada1\\Scada_2026\\SCADA_2026_1\\Smart_Batch_Scada\\Smart_Batch_Scada\\FormulaDetailsForm.cs",
+              "RelativeDocumentMoniker": "Smart_Batch_Scada\\FormulaDetailsForm.cs",
+              "ToolTip": "C:\\Users\\Mohammed_AlJamal\\OneDrive\\Desktop\\Scada1\\Scada_2026\\SCADA_2026_1\\Smart_Batch_Scada\\Smart_Batch_Scada\\FormulaDetailsForm.cs",
+              "RelativeToolTip": "Smart_Batch_Scada\\FormulaDetailsForm.cs",
+              "ViewState": "AgIAAAkBAAAAAAAAAAAkwBUBAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T15:04:11.111Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ProductsForm.Designer.cs",
-              "DocumentMoniker": "D:\\GP\\repo_scada_github\\SCADA_2026_1\\Smart_Batch_Scada\\Smart_Batch_Scada\\ProductsForm.Designer.cs",
-              "RelativeDocumentMoniker": "Smart_Batch_Scada\\ProductsForm.Designer.cs",
-              "ToolTip": "D:\\GP\\repo_scada_github\\SCADA_2026_1\\Smart_Batch_Scada\\Smart_Batch_Scada\\ProductsForm.Designer.cs",
-              "RelativeToolTip": "Smart_Batch_Scada\\ProductsForm.Designer.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAuwF8AAAAAAAAAAAAAAA==",
+              "Title": "ComponentSelectorForm.cs",
+              "DocumentMoniker": "C:\\Users\\Mohammed_AlJamal\\OneDrive\\Desktop\\Scada1\\Scada_2026\\SCADA_2026_1\\Smart_Batch_Scada\\Smart_Batch_Scada\\ComponentSelectorForm.cs",
+              "RelativeDocumentMoniker": "Smart_Batch_Scada\\ComponentSelectorForm.cs",
+              "ToolTip": "C:\\Users\\Mohammed_AlJamal\\OneDrive\\Desktop\\Scada1\\Scada_2026\\SCADA_2026_1\\Smart_Batch_Scada\\Smart_Batch_Scada\\ComponentSelectorForm.cs",
+              "RelativeToolTip": "Smart_Batch_Scada\\ComponentSelectorForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-12T10:21:47.101Z"
+              "WhenOpened": "2025-10-20T14:59:28.733Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProductsForm.cs",
-              "DocumentMoniker": "D:\\GP\\repo_scada_github\\SCADA_2026_1\\Smart_Batch_Scada\\Smart_Batch_Scada\\ProductsForm.cs",
-              "RelativeDocumentMoniker": "Smart_Batch_Scada\\ProductsForm.cs",
-              "ToolTip": "D:\\GP\\repo_scada_github\\SCADA_2026_1\\Smart_Batch_Scada\\Smart_Batch_Scada\\ProductsForm.cs",
-              "RelativeToolTip": "Smart_Batch_Scada\\ProductsForm.cs",
-              "ViewState": "AgIAAKUAAAAAAAAAAAAqwL0AAAAZAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "Plant_Mimic.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Mohammed_AlJamal\\OneDrive\\Desktop\\Scada1\\Scada_2026\\SCADA_2026_1\\Smart_Batch_Scada\\Smart_Batch_Scada\\Plant_Mimic.cs",
+              "RelativeDocumentMoniker": "Smart_Batch_Scada\\Plant_Mimic.cs",
+              "ToolTip": "C:\\Users\\Mohammed_AlJamal\\OneDrive\\Desktop\\Scada1\\Scada_2026\\SCADA_2026_1\\Smart_Batch_Scada\\Smart_Batch_Scada\\Plant_Mimic.cs [Design]",
+              "RelativeToolTip": "Smart_Batch_Scada\\Plant_Mimic.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-12T10:21:43.538Z"
+              "WhenOpened": "2025-10-20T14:14:42.585Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormulaDetailsForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Mohammed_AlJamal\\OneDrive\\Desktop\\Scada1\\Scada_2026\\SCADA_2026_1\\Smart_Batch_Scada\\Smart_Batch_Scada\\FormulaDetailsForm.cs",
+              "RelativeDocumentMoniker": "Smart_Batch_Scada\\FormulaDetailsForm.cs",
+              "ToolTip": "C:\\Users\\Mohammed_AlJamal\\OneDrive\\Desktop\\Scada1\\Scada_2026\\SCADA_2026_1\\Smart_Batch_Scada\\Smart_Batch_Scada\\FormulaDetailsForm.cs [Design]",
+              "RelativeToolTip": "Smart_Batch_Scada\\FormulaDetailsForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T19:06:38.563Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FormulaForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Mohammed_AlJamal\\OneDrive\\Desktop\\Scada1\\Scada_2026\\SCADA_2026_1\\Smart_Batch_Scada\\Smart_Batch_Scada\\FormulaForm.cs",
+              "RelativeDocumentMoniker": "Smart_Batch_Scada\\FormulaForm.cs",
+              "ToolTip": "C:\\Users\\Mohammed_AlJamal\\OneDrive\\Desktop\\Scada1\\Scada_2026\\SCADA_2026_1\\Smart_Batch_Scada\\Smart_Batch_Scada\\FormulaForm.cs [Design]",
+              "RelativeToolTip": "Smart_Batch_Scada\\FormulaForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T19:06:35.921Z"
             }
           ]
         }

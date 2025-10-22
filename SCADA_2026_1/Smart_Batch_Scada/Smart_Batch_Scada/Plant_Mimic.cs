@@ -48,5 +48,55 @@ namespace Smart_Batch_Scada
         {
 
         }
+
+        private void pictureBox56_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox113_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox131_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox54_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox57_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox121_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox17_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

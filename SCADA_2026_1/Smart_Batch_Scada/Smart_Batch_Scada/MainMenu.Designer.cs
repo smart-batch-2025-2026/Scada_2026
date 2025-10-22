@@ -667,7 +667,7 @@ namespace Smart_Batch_Scada
             panelNavigator.Dock = DockStyle.Left;
             panelNavigator.Location = new Point(0, 0);
             panelNavigator.Name = "panelNavigator";
-            panelNavigator.Size = new Size(142, 604);
+            panelNavigator.Size = new Size(139, 604);
             panelNavigator.TabIndex = 3;
             // 
             // btnLogout

@@ -8,7 +8,7 @@ namespace Smart_Batch_Scada
 {
     public partial class AggregateMixtureForm : Form
     {
-        private readonly string connString = "server=localhost;user id=root;password=3@Abdullah21st;database=hary_data_0;";
+        private readonly string connString = "server=localhost;user id=root;password=Mohammed10.;database=hary_data_0;";
         private readonly int? _mixtureId = null;
 
         public AggregateMixtureForm(int? mixtureId = null)

@@ -6,7 +6,7 @@ namespace Smart_Batch_Scada
 {
     public partial class Userappflow : Form
     {
-        private readonly string _connectionString = "Server=localhost;Port=3306;Database=hary_data_0;User=root;Password=3@Abdullah21st;";
+        private readonly string _connectionString = "Server=localhost;Port=3306;Database=hary_data_0;User=root;Password=Mohammed10.;";
 
         public Userappflow()
         {

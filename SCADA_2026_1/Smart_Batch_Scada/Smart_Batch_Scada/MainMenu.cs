@@ -1,4 +1,3 @@
- using Smart_Batch_Scada; // Add this if FormulaForm is in the root namespace
 using System;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
@@ -21,7 +20,7 @@ namespace Smart_Batch_Scada
             button2.Click += new System.EventHandler(this.button2_Click);
 
             // Initialize the MySQL connection
-            string connString = "server=localhost;user id=root;password=3@Abdullah21st;database=hary_data_0;";
+            string connString = "server=localhost;user id=root;password=Mohammed10.;database=hary_data_0;";
             conn = new MySqlConnection(connString);
             try
             {
@@ -35,7 +34,6 @@ namespace Smart_Batch_Scada
 
         private void MainMenu_Load(object sender, EventArgs e)
         {
-            // Initially show the Production panel
             ShowPanel(panelProduction);
         }
 
@@ -46,9 +44,20 @@ namespace Smart_Batch_Scada
             panelFiles.Visible = false;
             panelSystem.Visible = false;
 
-            // Bring the selected panel to front and show it
-            panelToShow.BringToFront();
+            // Reset z-order and docking
+            panelProduction.Dock = DockStyle.None;
+            panelFiles.Dock = DockStyle.None;
+            panelSystem.Dock = DockStyle.None;
+
+            this.Cursor = Cursors.WaitCursor;
+
+            // Bring selected panel to front and dock it properly
             panelToShow.Visible = true;
+            panelToShow.Dock = DockStyle.Fill;
+            panelToShow.BringToFront();
+
+            // Reset cursor when done
+            this.Cursor = Cursors.Default;
         }
 
         // --- Navigator Buttons ---

@@ -7,7 +7,7 @@ namespace Smart_Batch_Scada
 {
     public partial class FormulaComponentSelectForm : Form
     {
-        private string connString = "server=localhost;user id=root;password=3@Abdullah21st;database=hary_data_0;";
+        private string connString = "server=localhost;user id=root;password=Mohammed10.;database=hary_data_0;";
         private MySqlConnection externalConn;
         private int? formulaId;
 
@@ -38,19 +38,21 @@ namespace Smart_Batch_Scada
 
         private void LoadComponents(string type)
         {
+            MySqlConnection conn = externalConn ?? new MySqlConnection(connString);
+            bool createdHere = externalConn == null;
+
             try
             {
-                using (MySqlConnection conn = externalConn ?? new MySqlConnection(connString))
-                {
-                    if (conn.State != ConnectionState.Open)
-                        conn.Open();
+                if (conn.State != ConnectionState.Open)
+                    conn.Open();
 
-                    string query = "SELECT Id, Code, Description FROM Components WHERE Type = @Type";
-                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                string query = "SELECT Id, Code, Description FROM Components WHERE Type = @Type";
+                using (var cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@Type", type);
+                    using (var da = new MySqlDataAdapter(cmd))
                     {
-                        cmd.Parameters.AddWithValue("@Type", type);
-                        MySqlDataAdapter da = new MySqlDataAdapter(cmd);
-                        DataTable dt = new DataTable();
+                        var dt = new DataTable();
                         da.Fill(dt);
                         dataGridView1.DataSource = dt;
                     }
@@ -61,7 +63,13 @@ namespace Smart_Batch_Scada
                 MessageBox.Show("Error loading components: " + ex.Message, "Error",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            finally
+            {
+                if (createdHere)
+                    conn.Dispose();   // only dispose connections we created
+            }
         }
+
 
         private void btnSelect_Click(object sender, EventArgs e)
         {

@@ -18,6 +18,8 @@ namespace Smart_Batch_Scada
             conn = connection;
             formulaId = id;
             this.copyMode = copyMode;
+            this.Shown += (_, __) => LoadComponentsGrid();
+
         }
 
         private void FormulaDetailsForm_Load(object sender, EventArgs e)
@@ -64,33 +66,65 @@ namespace Smart_Batch_Scada
         {
             try
             {
-                conn.Open();
-                string query = @"SELECT fc.id AS 'ID',
-                                        c.Code AS 'Component Code',
-                                        c.Description AS 'Component',
-                                        c.UOM AS 'UOM',
-                                        fc.quantity AS 'Quantity',
-                                        fc.percent_on_cement AS '% on Cement',
-                                        c.Gravity AS 'S.W.'
-                                 FROM formula_components fc
-                                 JOIN Components c ON fc.component_id = c.Id
-                                 WHERE fc.formula_id = @fid";
-                MySqlCommand cmd = new MySqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@fid", formulaId);
-                MySqlDataAdapter da = new MySqlDataAdapter(cmd);
-                DataTable dt = new DataTable();
-                da.Fill(dt);
-                dgvComponents.DataSource = dt;
+                dgvComponents.Cursor = Cursors.WaitCursor;
+
+                if (!formulaId.HasValue)
+                {
+                    // No formula yet -> empty grid
+                    dgvComponents.DataSource = null;
+                    return;
+                }
+
+                if (conn.State != ConnectionState.Open)
+                    conn.Open();
+
+                const string sql = @"
+            SELECT 
+                fc.id            AS fc_id,
+                fc.component_id  AS component_id,
+                c.code           AS Code,
+                c.description    AS Description,
+                fc.quantity      AS Quantity,
+                fc.percent_on_cement AS PercentOnCement
+            FROM formula_components fc
+            JOIN components c ON c.id = fc.component_id
+            WHERE fc.formula_id = @fid
+            ORDER BY c.code;";
+
+                using (var cmd = new MySqlCommand(sql, conn))
+                {
+                    cmd.Parameters.AddWithValue("@fid", formulaId.Value);
+                    using (var da = new MySqlDataAdapter(cmd))
+                    {
+                        var dt = new DataTable();
+                        da.Fill(dt);
+
+                        // Force a hard refresh
+                        dgvComponents.AutoGenerateColumns = true;       // or keep false if you added bound columns
+                        dgvComponents.DataSource = null;                 // <- important so the grid doesn’t cache
+                        dgvComponents.DataSource = dt;
+
+                        // Optional: nicer selection behavior
+                        dgvComponents.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+                        dgvComponents.ReadOnly = true;
+                        dgvComponents.MultiSelect = false;
+                    }
+                }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error loading components:\n" + ex.Message);
+                MessageBox.Show("Error loading formula components:\n" + ex.Message,
+                                "Load Components", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             finally
             {
-                conn.Close();
+                if (conn.State == ConnectionState.Open)
+                    conn.Close();
+
+                dgvComponents.Cursor = Cursors.Default;
             }
         }
+
 
         private void btnSave_Click(object sender, EventArgs e)
         {
@@ -150,34 +184,112 @@ namespace Smart_Batch_Scada
                 return;
             }
 
-            FormulaComponentSelectForm selectForm = new FormulaComponentSelectForm(conn, formulaId.Value);
-            if (selectForm.ShowDialog() == DialogResult.OK)
-                LoadComponentsGrid();
+            using (var selectForm = new FormulaComponentSelectForm(conn, formulaId.Value))
+            {
+                if (selectForm.ShowDialog() == DialogResult.OK && selectForm.Tag != null)
+                {
+                    dynamic chosen = selectForm.Tag;      // set in picker dialog
+                    int componentId = (int)chosen.ComponentId;
+
+                    try
+                    {
+                        if (conn.State != ConnectionState.Open)
+                            conn.Open();
+
+                        string insert =
+                            @"INSERT INTO formula_components
+                      (formula_id, component_id, quantity, percent_on_cement)
+                      VALUES (@fid, @cid, 0, NULL)";
+
+                        using (var cmd = new MySqlCommand(insert, conn))
+                        {
+                            cmd.Parameters.AddWithValue("@fid", formulaId.Value);
+                            cmd.Parameters.AddWithValue("@cid", componentId);
+                            cmd.ExecuteNonQuery();
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error adding component:\n" + ex.Message);
+                    }
+                    finally
+                    {
+                        conn.Close();
+                    }
+
+                    LoadComponentsGrid(); // refresh list
+                }
+            }
         }
+
 
         private void btnDeleteComponent_Click(object sender, EventArgs e)
         {
-            if (dgvComponents.SelectedRows.Count == 0)
+            if (dgvComponents.CurrentRow == null)
                 return;
 
-            int compId = Convert.ToInt32(dgvComponents.SelectedRows[0].Cells["ID"].Value);
+            // Get the selected DataGridViewRow
+            var row = dgvComponents.CurrentRow;
+
+            // Safely get the formula_components.id -> alias is fc_id in the grid
+            int formulaComponentId;
             try
             {
-                conn.Open();
-                MySqlCommand cmd = new MySqlCommand("DELETE FROM formula_components WHERE id=@id", conn);
-                cmd.Parameters.AddWithValue("@id", compId);
-                cmd.ExecuteNonQuery();
+                // works when AutoGenerateColumns = true and the column name is "fc_id"
+                var cellValue = row.Cells["fc_id"].Value;
+                if (cellValue == null || cellValue == DBNull.Value)
+                {
+                    MessageBox.Show("Could not determine the selected component id (fc_id).");
+                    return;
+                }
+                formulaComponentId = Convert.ToInt32(cellValue);
+            }
+            catch
+            {
+                // fallback if needed when bound to DataRowView
+                if (row.DataBoundItem is DataRowView drv && drv.Row.Table.Columns.Contains("fc_id"))
+                    formulaComponentId = Convert.ToInt32(drv["fc_id"]);
+                else
+                {
+                    MessageBox.Show("Could not determine the selected component id (fc_id).");
+                    return;
+                }
+            }
+
+            var confirm = MessageBox.Show("Delete selected component?", "Confirm",
+                                          MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (confirm != DialogResult.Yes) return;
+
+            try
+            {
+                this.Cursor = Cursors.WaitCursor;
+
+                if (conn.State != ConnectionState.Open)
+                    conn.Open();
+
+                using (var cmd = new MySqlCommand(
+                    "DELETE FROM formula_components WHERE id = @id", conn))
+                {
+                    cmd.Parameters.AddWithValue("@id", formulaComponentId);
+                    cmd.ExecuteNonQuery();
+                }
+
+                // Refresh the grid after deleting
                 LoadComponentsGrid();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error deleting component:\n" + ex.Message);
+                MessageBox.Show("Delete failed: " + ex.Message);
             }
             finally
             {
-                conn.Close();
+                if (conn.State == ConnectionState.Open)
+                    conn.Close();
+
+                this.Cursor = Cursors.Default;
             }
         }
+
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
