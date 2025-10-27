@@ -11,8 +11,20 @@
   <ItemGroup>
     <PackageReference Include="ClosedXML" Version="0.105.0" />
     <PackageReference Include="iTextSharp" Version="5.5.13.4" />
-    <PackageReference Include="MySql.Data" Version="9.4.0" />
+    <PackageReference Include="MySql.Data" Version="9.5.0" />
     <PackageReference Include="Sharp7" Version="1.1.84" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Application_Layer">
+      <HintPath>..\..\..\..\Core_Logic\Core_Logic\bin\Debug\net8.0\Application_Layer.dll</HintPath>
+    </Reference>
+    <Reference Include="Core_Logic">
+      <HintPath>..\..\..\..\Core_Logic\Core_Logic\bin\Debug\net8.0\Core_Logic.dll</HintPath>
+    </Reference>
+    <Reference Include="Infrastructure">
+      <HintPath>..\..\..\..\Core_Logic\Infrastructure\Infrastructure\bin\Debug\net8.0\Infrastructure.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
   <ItemGroup>

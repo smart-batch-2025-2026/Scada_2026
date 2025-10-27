@@ -1,0 +1,22 @@
+F:\Senior_2\Smart Batch\SCADA\SCADA_Core_Logic\Core_Logic\bin\Debug\net8.0\Core_Logic.deps.json
+F:\Senior_2\Smart Batch\SCADA\SCADA_Core_Logic\Core_Logic\bin\Debug\net8.0\Core_Logic.dll
+F:\Senior_2\Smart Batch\SCADA\SCADA_Core_Logic\Core_Logic\bin\Debug\net8.0\Core_Logic.pdb
+F:\Senior_2\Smart Batch\SCADA\SCADA_Core_Logic\Core_Logic\obj\Debug\net8.0\Core_Logic.GeneratedMSBuildEditorConfig.editorconfig
+F:\Senior_2\Smart Batch\SCADA\SCADA_Core_Logic\Core_Logic\obj\Debug\net8.0\Core_Logic.AssemblyInfoInputs.cache
+F:\Senior_2\Smart Batch\SCADA\SCADA_Core_Logic\Core_Logic\obj\Debug\net8.0\Core_Logic.AssemblyInfo.cs
+F:\Senior_2\Smart Batch\SCADA\SCADA_Core_Logic\Core_Logic\obj\Debug\net8.0\Core_Logic.csproj.CoreCompileInputs.cache
+F:\Senior_2\Smart Batch\SCADA\SCADA_Core_Logic\Core_Logic\obj\Debug\net8.0\Core_Logic.dll
+F:\Senior_2\Smart Batch\SCADA\SCADA_Core_Logic\Core_Logic\obj\Debug\net8.0\refint\Core_Logic.dll
+F:\Senior_2\Smart Batch\SCADA\SCADA_Core_Logic\Core_Logic\obj\Debug\net8.0\Core_Logic.pdb
+F:\Senior_2\Smart Batch\SCADA\SCADA_Core_Logic\Core_Logic\obj\Debug\net8.0\ref\Core_Logic.dll
+D:\GP\git_repo\Core_Logic\Core_Logic\bin\Debug\net8.0\Core_Logic.deps.json
+D:\GP\git_repo\Core_Logic\Core_Logic\bin\Debug\net8.0\Core_Logic.dll
+D:\GP\git_repo\Core_Logic\Core_Logic\bin\Debug\net8.0\Core_Logic.pdb
+D:\GP\git_repo\Core_Logic\Core_Logic\obj\Debug\net8.0\Core_Logic.GeneratedMSBuildEditorConfig.editorconfig
+D:\GP\git_repo\Core_Logic\Core_Logic\obj\Debug\net8.0\Core_Logic.AssemblyInfoInputs.cache
+D:\GP\git_repo\Core_Logic\Core_Logic\obj\Debug\net8.0\Core_Logic.AssemblyInfo.cs
+D:\GP\git_repo\Core_Logic\Core_Logic\obj\Debug\net8.0\Core_Logic.csproj.CoreCompileInputs.cache
+D:\GP\git_repo\Core_Logic\Core_Logic\obj\Debug\net8.0\Core_Logic.dll
+D:\GP\git_repo\Core_Logic\Core_Logic\obj\Debug\net8.0\refint\Core_Logic.dll
+D:\GP\git_repo\Core_Logic\Core_Logic\obj\Debug\net8.0\Core_Logic.pdb
+D:\GP\git_repo\Core_Logic\Core_Logic\obj\Debug\net8.0\ref\Core_Logic.dll

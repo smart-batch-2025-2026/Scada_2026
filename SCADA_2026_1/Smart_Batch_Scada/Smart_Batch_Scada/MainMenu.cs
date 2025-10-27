@@ -20,7 +20,7 @@ namespace Smart_Batch_Scada
             button2.Click += new System.EventHandler(this.button2_Click);
 
             // Initialize the MySQL connection
-            string connString = "server=localhost;user id=root;password=Mohammed10.;database=hary_data_0;";
+            string connString = "server=localhost;user id=root;password=3@Abdullah21st;database=hary_data_0;";
             conn = new MySqlConnection(connString);
             try
             {

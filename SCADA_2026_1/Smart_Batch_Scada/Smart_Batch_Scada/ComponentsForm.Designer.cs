@@ -9,7 +9,7 @@ namespace Smart_Batch_Scada
         private System.ComponentModel.IContainer components = null;
         private DataGridView dataGridView1;
         private Button btnNew, btnEdit, btnDelete, btnImport, btnExport, btnPrint, btnExit;
-        private Button btnAggregate, btnCement, btnWater, btnAdditive, btnColour, btnAdding, btnAggMix;
+        private Button btnAggregate, btnCement, btnWater, btnAdditive, btnColour, btnAdding;
 
         protected override void Dispose(bool disposing)
         {
@@ -26,7 +26,7 @@ namespace Smart_Batch_Scada
             btnNew = new Button(); btnEdit = new Button(); btnDelete = new Button();
             btnImport = new Button(); btnExport = new Button(); btnPrint = new Button(); btnExit = new Button();
             btnAggregate = new Button(); btnCement = new Button(); btnWater = new Button();
-            btnAdditive = new Button(); btnColour = new Button(); btnAdding = new Button(); btnAggMix = new Button();
+            btnAdditive = new Button(); btnColour = new Button(); btnAdding = new Button(); 
 
             ((System.ComponentModel.ISupportInitialize)(dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -85,7 +85,6 @@ namespace Smart_Batch_Scada
             SetupFilterButton(btnAdditive, "Additive", Properties.Resources.additive, Color.LightGreen, new Point(350, 20), btnAdditive_Click);
             SetupFilterButton(btnColour, "Colour", Properties.Resources.color, Color.LightPink, new Point(460, 20), btnColour_Click);
             SetupFilterButton(btnAdding, "Adding", Properties.Resources.adding, Color.LightYellow, new Point(570, 20), btnAdding_Click);
-            SetupFilterButton(btnAggMix, "AggMix", Properties.Resources.Aggregates_mixtures, Color.LightCoral, new Point(680, 20), btnAggMix_Click);
 
             // Form setup
             this.ClientSize = new Size(860, 530);
@@ -93,7 +92,7 @@ namespace Smart_Batch_Scada
             this.Controls.AddRange(new Control[]
             {
                 btnNew, btnEdit, btnDelete, btnImport, btnExport, btnPrint, btnExit,
-                btnAggregate, btnCement, btnWater, btnAdditive, btnColour, btnAdding, btnAggMix
+                btnAggregate, btnCement, btnWater, btnAdditive, btnColour, btnAdding
             });
             this.Text = "Components Management";
             this.Load += new EventHandler(this.ComponentsForm_Load);

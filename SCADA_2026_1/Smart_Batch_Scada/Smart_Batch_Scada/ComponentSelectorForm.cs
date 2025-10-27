@@ -7,7 +7,7 @@ namespace Smart_Batch_Scada
 {
     public partial class FormulaComponentSelectForm : Form
     {
-        private string connString = "server=localhost;user id=root;password=Mohammed10.;database=hary_data_0;";
+        private string connString = "server=localhost;user id=root;password=3@Abdullah21st;database=hary_data_0;";
         private MySqlConnection externalConn;
         private int? formulaId;
 
